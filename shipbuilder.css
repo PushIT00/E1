@@ -1,0 +1,133 @@
+/* CSS for Shipbuilder */
+
+body {	
+		margin: 0 auto;
+		background-color:#000;
+		color:#fff;
+		font-family:gill sans, tahoma, arial;
+		}
+a		{ }
+div {}
+
+#points {	float:right; 
+			clear:right;
+			margin-right:0.53%;
+		}
+
+#racetitle {	float:left; 
+				clear:right;
+				margin-left:0.53%;
+			}
+
+#racetitle:after {	content: ".";
+ 					display: block;
+  					height: 0;
+  					clear: both;
+  					visibility: hidden;
+					}
+
+#wrapper {	margin:0.53%; 
+			width:97%; 
+			background-color:#000;
+			}
+
+#titlepane {width:65%; 
+			float:left; 
+			background-color:#000; 
+			margin:0.53%;
+			border:0px solid #fff;
+			font-size:2em;
+			color:#fff;
+			}
+
+#loginpane {width:31%; 
+			float:right; 
+			background-color:#000; 
+			margin:0.53%;
+			border:1px solid #fff;
+			}
+
+#racepointspane {	width:99%; 
+					background-color:#000; 
+					margin:0.53%;
+					border:1px solid #fff;
+				}
+
+#selectorpane{	width:31.444%; 
+				float:right; 
+				margin:0.53%; 
+				clear:both;
+				border:0px solid #000;
+				background-color:#000;
+				clear:left;
+				padding:0;
+				}
+
+#selectorpane img{	float:right;
+					clear:right;
+					}
+
+#selectorpane li{	background-color:#fff;
+					color:#000;
+					border-bottom:1px solid #000;
+					clear:left;
+					list-style-type:none;
+					margin-left:-10.3%;
+					font-weight: bold;
+					font-size:1.3em;
+					padding:1.7% 0 1.7% 3%;
+					
+					}
+
+#selectorpane li span 	{	font-size:0.7em;
+							font-weight:normal;
+						}
+
+#selectorpane p 	{margin:0.53%;}
+
+#canvaspane {	width:65%; 
+				float:left;  
+				margin:0.53%;
+				border:1px solid #fff;
+				background-color: #fff;}
+
+#statspane {	width:65%; 
+				float:left; 
+				background-color:#900; 
+				margin:0.53%;
+				border:1px solid #fff;
+				}
+
+#linkspane {	width:99%; 
+				background-color:#afa; 
+				margin:0.53%;
+				}
+
+.clearall {clear:both;}
+
+@media screen and (max-width:959px){
+	body{background-color:#0ff;}
+	#wrapper {}
+	#titlepane {}
+	#loginpane {}
+	#racepointspane {}
+	#selectorpane{}
+	#selectorpane li{margin-left:-17%;}
+	#canvaspane {}
+	#statspane {}
+	#linkspane {}
+	}
+
+
+@media screen and (max-width:479px){
+	body {background-color:#ff0;}
+	#wrapper {}
+	#titlepane {float:none; width:99%;}
+	#loginpane {float:none; width:99%;}
+	#racepointspane {}
+	#selectorpane{float:none; width:99%;}
+	#selectorpane li{margin-left:-12.3%;}
+	#canvaspane {width:99%;}
+	#statspane {}
+	#linkspane {}
+	}
