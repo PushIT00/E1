@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	
+	<title>Encounter One Ship Builder</title>
+	
+    <link rel="STYLESHEET" type="text/css" href="css/shipbuilder.css">
+
+
+
+</head>
+
+<body>
+<div id="wrapper">
+	<header id="titlepane">The Encounter1 Ship builder</header>
+	<header id="loginpane">Login</header>
+	<div class="clearall"></div>
+	<nav id="racepointspane"> 
+        <span id="racetitle">Race: </span>
+        <span id="points">Current points XXX</span>  
+		
+        <form id="raceform" action="">
+			<select id="raceSelect" tabindex="1" > <!--onchange="returnRace()"-->
+  				<!--<option value="">Choose race</option>-->
+  				<option value="rr">Rim Raider</option>
+  				<option value="nv">Novan</option>
+  				<option value="au">Aurigan</option>
+  				<option value="fd">Federation</option>
+  				<option value="em" selected>Empire</option>
+  				<option value="gh">Great House</option>
+  				<option value="mh">Minor House</option>
+  				<option value="gu">Guild</option>
+			</select>
+    
+
+		</form>
+        <div class="clearall"></div>
+    </nav>
+
+	<aside id="selectorpane">
+		<p>Points expressed as x/y have a base cost of x and a variable strength of y</p> 
+		<ul>
+		</ul>
+	</aside>
+	<section id="canvaspane">
+		<img src="icons/reactor.gif"><img src="icons/hull.gif">
+	</section>
+	<section id="statspane">
+		stats
+	</section>
+	<footer id="linkspane" class="clearall">
+		<a href="http://greblord-littlemen.blogspot.com">Greblord's little men</a>
+	</footer>
+</div>
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="boxes.js"></script> 
+    <script>$(makeMenu(race)).ready();</script> <!-- builds initial menu in selectorpane-->
+</body>
+</html>
